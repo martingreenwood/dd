@@ -1,0 +1,149 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/9/2014
+* Sass Version by Seth Coelen https://github.com/whatsnewsaes
+*/
+
+.pace {
+	-webkit-pointer-events: none;
+	pointer-events: none;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	-webkit-transform: translate3d(0, -50px, 0);
+	-ms-transform: translate3d(0, -50px, 0);
+	transform: translate3d(0, -50px, 0);
+
+	-webkit-transition: -webkit-transform .5s ease-out;
+	-ms-transition: -webkit-transform .5s ease-out;
+	transition: transform .5s ease-out;
+
+	&.pace-active {
+		-webkit-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+
+	.pace-progress {
+		display: block;
+		position: fixed;
+		z-index: 2000;
+		top: 0;
+		right: 100%;
+		width: 100%;
+		height: 10px;
+		background: $primary-color;
+
+		pointer-events: none;
+	}
+}
+
+
+#masthead {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 51;
+	padding: 20px 0;
+
+	background-color: $light-grey;
+
+	-webkit-transition: top .5s linear 0s, background 0.5s linear 0s;
+	-moz-transition: top .5s linear 0s, background 0.5s linear 0s;
+	-ms-transition: top .5s linear 0s, background 0.5s linear 0s;
+	-o-transition: top .5s linear 0s, background 0.5s linear 0s;
+	transition: top .5s linear 0s, background 0.5s linear 0s;
+
+	.container {
+		padding: 0;
+	}
+
+	&.fixed {
+
+		.toggled {
+
+			.hamburger {
+
+				.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+					// background-color: white;
+				}
+			}
+		}
+
+		.menu-primary-container {
+
+			ul {
+
+				li {
+
+					&:hover {
+
+						a {
+							background-color: transparent;
+							border-color: black !important;
+						}
+
+						.sub-menu {
+							background-color: white;
+						}
+					}
+
+					a {
+						color: black;
+						border-color: black;
+					}
+
+					ul {
+						background: white;
+					}
+				}
+			}
+		}
+
+		.row {
+			.main-navigation {
+				// margin-top: 7px;
+			}
+
+			.hamburger {
+				// margin-top: 8px;
+			}
+
+			.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+				// background-color: black;
+			}
+		}
+	}
+
+	.row {
+
+		.site-branding {
+			text-align: center;
+
+			svg, img {
+				display: block;
+				margin: 0 auto;
+				width: 130px;
+				height: 44px;
+			}
+		}
+
+		.main-navigation {
+			float: right;
+		}
+	}
+}
+
+

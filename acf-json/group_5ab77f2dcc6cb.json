@@ -1,0 +1,41 @@
+{
+    "key": "group_5ab77f2dcc6cb",
+    "title": "Info",
+    "fields": [
+        {
+            "key": "field_5ab77f342dbf3",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Video Embed code format:\r\n\r\n<div class=\"videoWrapper\"><iframe src=\"https:\/\/dugout.com\/embed\/20002\" width=\"300\" height=\"150\" frameborder=\"0\" scrolling=\"no\" allowfullscreen=\"allowfullscreen\"><\/iframe><\/div>",
+            "new_lines": "br",
+            "esc_html": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 6,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1521975244
+}

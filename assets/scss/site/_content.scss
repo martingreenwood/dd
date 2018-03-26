@@ -1,0 +1,411 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/9/2014
+* Sass Version by Seth Coelen https://github.com/whatsnewsaes
+*/
+
+html, body {
+	min-height: 100%;
+}
+
+.map {
+	width: 100%;
+	height: 400px;
+	border: #ccc solid 1px;
+	margin: 20px 0;
+
+	/* fixes potential theme css conflict */
+	img {
+	   max-width: inherit !important;
+	}
+}
+
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+.sociallinks {
+
+	ul {
+		list-style: none;
+		margin: 20px 0 0 0;
+
+		li {
+			margin: 0 5px 0 0;
+			display: inline-block;
+
+			a {
+				background-color: white;
+				color: $primary-color !important;
+				font-size: 16px;
+				width: 32px;
+				height: 32px;
+				padding: 0;
+				display: block;
+				text-align: center;
+				border-radius: 50%;
+				line-height: 1;
+
+				svg {
+					margin-bottom: 0;
+					padding: 8px 0px;
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+#content {
+	background-color: $light-grey;
+}
+
+#primary {
+	text-align: left;
+	background-color: $light-grey;
+}
+
+/*============================
+=            HOME            =
+============================*/
+
+.home {
+
+	.menu-course-container {
+		padding-bottom: 60px;
+		border-bottom: 2px solid $primary-color;
+	}
+
+	#content {
+
+		.container {
+			padding: 0;
+		}
+
+		.post {
+			margin-bottom: 0;
+
+			a {
+				text-decoration: none;
+			}
+
+			.entry-header {
+				padding: 20px;
+
+				h2 {
+					font-size: 30px;
+					color: black;
+
+					a {
+						color: inherit;
+					}
+				}
+			}
+
+			.entry-meta {
+
+				div {
+					color: black;
+					padding: 3px 6px;
+					display: inline;
+				}
+
+				.time {
+					background-color: white;
+				}
+
+				.slash {
+					background: linear-gradient(to right bottom, white 50%, $primary-color 50%);
+				}
+
+				.cat {
+					background-color: $primary-color;
+				}
+			}
+
+			&:not(:first-of-type) {
+				background-color: white;
+				box-sizing: border-box;
+				padding: 20px;
+				border-bottom: 1px solid #eee;
+
+				.post-thumbnail {
+					float: left;
+					width: 40%;
+				}
+
+				.entry-meta {
+
+					.time {
+						background-color: #eeeeee;
+					}
+
+					.slash {
+						background: linear-gradient(to right bottom, #eee 50%, $primary-color 50%);
+					}
+
+					.cat {
+						background-color: $primary-color;
+					}
+				}
+
+				.entry-header {
+					float: left;
+					width: 60%;
+					padding: 0 0 0 20px;
+					box-sizing: border-box;
+
+					h2 {
+						font-size: 18px;
+						color: black;
+						margin-bottom: 20px;
+
+						a {
+							color: inherit;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+/*============================
+=            PAGE            =
+============================*/
+
+.page {
+
+	a.button {
+		display: block;
+		background: yellow;
+		font-size: inherit;
+		font-weight: bold;
+		box-shadow: none;
+		border-radius: 0;
+		height: auto;
+		font-family: $heading-font;
+		padding: 5px 20px;
+	}
+
+	.entry-header {
+		padding: 20px 0;
+
+		h1 {
+			font-size: 30px;
+			color: black;
+			margin-bottom: 0;
+
+			a {
+				color: inherit;
+			}
+		}
+	}
+
+	#primary {
+		text-align: left;
+	}
+
+	.entry-content {
+		margin-bottom: 20px;
+
+		.container {
+			padding: 0 20px;
+		}
+	}
+}
+
+/*================================
+=            NEWS STY            =
+================================*/
+
+.single {
+
+	#st-1, #st-2 {
+		float: right;
+		padding: 0;
+	
+
+		.st-btn[data-network='sharethis'] {
+			background-color: #95D03A;
+			height: 25px;
+			width: 25px;
+			line-height: 25px;
+			padding: 0;
+		}
+
+		.st-btn > svg {
+			top: 4px;
+		}
+	}
+
+	.videoWrapper {
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		padding-top: 25px;
+		height: 0;
+	
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.container {
+		padding: 0;
+	}
+
+	.entry-header {
+		padding: 20px;
+
+		h1 {
+			font-size: 30px;
+			color: black;
+
+			a {
+				color: inherit;
+			}
+		}
+	}
+
+	.entry-meta {
+
+		div {
+			color: black;
+			padding: 3px 6px;
+			display: inline;
+		}
+
+		.time {
+			background-color: white;
+		}
+
+		.slash {
+			background: linear-gradient(to right bottom, white 50%, $primary-color 50%);
+		}
+
+		.cat {
+			background-color: $primary-color;
+		}
+	}
+
+	.entry-content {
+		padding: 20px;
+		background-color: white;
+
+		figure {
+			margin: 1em 0;
+
+			figcaption {
+				background: $primary-color;
+				padding: 8px;
+			}
+		}
+
+		.videoWrapper {
+			margin-bottom: 20px;
+		}
+
+		.entry-meta {
+			margin-top: 20px;
+			padding-top: 20px;
+			border-top: 1px solid #eee;
+
+			div {
+			}
+
+			.time {
+				background-color: #eee;
+			}
+
+			.slash {
+				background: linear-gradient(to right bottom, #eee 50%, $primary-color 50%);
+			}
+
+			.cat {
+				background-color: $primary-color;
+			}
+		}
+	}
+
+	.post-thumbnail {
+		margin-bottom: 30px;
+	}
+
+	.post-navigation {
+		h2 {
+			display: none;
+		}
+
+		.nav-previous {
+			float: left;
+		}
+		.nav-next {
+			float: right;
+
+			a {
+				background-color: $secondary-color;
+				content: "Next Story";
+			}
+		}
+
+		a {
+			content: "Previous Story";
+			background-color: $primary-color;
+			color: white;
+			padding: 10px 24px;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+	}
+
+
+	.sidebar {
+
+		h2.widget-title {
+			padding: 20px;
+			font-size: 21px;
+			color: black;
+			margin: 0;
+		}
+
+		ul {
+			margin: 0;
+			list-style: none;
+			
+			li {
+				padding: 20px;
+				background: white;
+				margin: 0;
+				border-bottom: 1px solid #eee;
+
+				img {
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+				
+				a {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+

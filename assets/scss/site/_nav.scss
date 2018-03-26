@@ -1,0 +1,192 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/9/2014
+* Sass Version by Seth Coelen https://github.com/whatsnewsaes
+*/
+
+#site-navigation {
+
+	.dugout-main-menu {
+		display: none;
+
+		.social {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			padding: 50px 0;
+			background: black;
+
+			ul {
+				width: 100%;
+				margin: 0;
+				text-align: center;
+
+				li {
+					background-color: $primary-color;
+					border-radius: 50%;
+					margin: 0 3px;
+					width: 60px;
+					text-align: center;
+					padding: 6px 0;
+					display: inline-block;
+
+					a {
+						color: black;
+						font-size: 30px;
+					}
+				}
+			}
+		}
+
+		.menu-primary-container {
+			padding-top: 50px;
+
+			ul {
+				list-style: none;
+				text-align: right;
+				margin-bottom: 0;
+
+				&:before {
+					content: '';
+					background-image: url(assets/img/d-icon.png);
+					background-size: contain;
+					background-position: center;
+					background-repeat: no-repeat;
+					width: 120px;
+					height: 120px;
+					display: inline-block;
+					margin-bottom: 30px;
+				}
+
+				li {
+					display: block;
+					max-width: 100%;
+					margin: 0 auto;
+					line-height: 2;
+					position: relative;
+					margin-bottom: 10px;
+
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+
+					&:before {
+						content: '';
+						position: absolute;
+						background: black;
+						width: 100%;
+						height: 100%;
+						left: -1000px;
+						bottom: 0;
+						opacity: 0;
+						z-index: -1;
+						-webkit-transform: skew(-15deg);
+						   -moz-transform: skew(-15deg);
+						    -ms-transform: skew(-15deg);
+						     -o-transform: skew(-15deg);
+						        transform: skew(-15deg);
+						        -webkit-transition: all .25s linear;
+						           -moz-transition: all .25s linear;
+						            -ms-transition: all .25s linear;
+						             -o-transition: all .25s linear;
+						                transition: all .25s linear;
+
+					}
+
+					&:hover, &.current-menu-item {
+
+						&:before {
+							opacity: 1;
+							left: -10px;
+						}
+
+						a {
+							color: $primary-color;
+						}
+					}
+
+					a {
+						text-decoration: none;
+						color: black;
+						font-family: $nav-font-family;
+						text-transform: uppercase;
+						font-size: 26px;
+						display: block;
+						padding: 0;
+						line-height: inherit;
+					}
+				}
+			}
+		}
+	}
+
+	.hamburger {
+		padding: 0;
+		border-radius: 0;
+		height: inherit;
+		position: absolute;
+		right: 10px;
+		z-index: 999;
+		top: 8px;
+
+		.hamburger-box {
+			display: block;
+		}
+
+		.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+			background-color: black;
+		}
+	}
+
+	// @media (#{$bp-larger-than-desktophd}) {
+	// 	.menu-toggle {
+	// 		display: none;
+	// 	}
+
+	// 	.menu-primary-container {
+	// 		display: block;
+	// 	}
+	// }
+
+	&.toggled {
+
+		.hamburger {
+
+			.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+				background-color: black;
+			}
+		}
+
+		.dugout-main-menu {
+			position: fixed;
+			top: 0;
+			left: 0;
+			display: table;
+			width: 100%;
+			height: 100%;
+			background: $primary-color;
+
+			#primary-menu {
+				width: 100%;
+				height: 100%;
+				vertical-align: middle;
+				text-align: center;
+
+				li {
+
+					a {
+						-webkit-transition: all .25s linear;
+					       -moz-transition: all .25s linear;
+					        -ms-transition: all .25s linear;
+					         -o-transition: all .25s linear;
+					            transition: all .25s linear;
+					}
+				}
+			}
+		}
+	}
+}
