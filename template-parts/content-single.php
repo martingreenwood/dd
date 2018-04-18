@@ -27,10 +27,9 @@
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 		?>
-
-		<?php 
-		/*
 		<div class="entry-meta">
+			<?php 
+			/*
 			<div class="time">	
 				<!-- <i class="far fa-clock"></i> -->
 				<?php
@@ -52,10 +51,10 @@
 				echo $category[0]->cat_name;
 				?>
 			</div>
+			*/ 
+			?>
 			<div class="sharethis-inline-share-buttons"></div>
 		</div><!-- .entry-meta -->
-		*/ 
-		?>
 	</header>
 
 	<div class="entry-content">
@@ -74,6 +73,8 @@
 			) );
 		?>
 		<div class="entry-meta">
+			<?php
+			/*
 			<div class="time">	
 				<!-- <i class="far fa-clock"></i> -->
 				<?php
@@ -95,6 +96,8 @@
 				echo $category[0]->cat_name;
 				?>
 			</div>
+			*/ 
+			?>
 			<div class="sharethis-inline-share-buttons"></div>
 		</div><!-- .entry-meta -->
 	</div>

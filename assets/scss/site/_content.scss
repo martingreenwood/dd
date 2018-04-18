@@ -244,23 +244,23 @@ html, body {
 
 .single {
 
-	#st-1, #st-2 {
-		float: right;
-		padding: 0;
+	//#st-1, #st-2 {
+	//	float: right;
+	//	padding: 0;
 	
 
-		.st-btn[data-network='sharethis'] {
-			background-color: #95D03A;
-			height: 25px;
-			width: 25px;
-			line-height: 25px;
-			padding: 0;
-		}
+	//	.st-btn[data-network='sharethis'] {
+	//		background-color: #95D03A;
+	//		height: 25px;
+	//		width: 25px;
+	//		line-height: 25px;
+	//		padding: 0;
+	//	}
 
-		.st-btn > svg {
-			top: 4px;
-		}
-	}
+	//	.st-btn > svg {
+	//		top: 4px;
+	//	}
+	//}
 
 	.videoWrapper {
 		position: relative;
@@ -424,6 +424,7 @@ html, body {
 				
 				a {
 					text-decoration: none;
+					color: black;
 				}
 			}
 		}

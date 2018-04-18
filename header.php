@@ -43,6 +43,11 @@
 								'menu_id'        => 'primary-menu',
 							) );
 						?>
+						
+						<div class="translateblock">
+							<?php echo do_shortcode( '[GTranslate]' ); ?>
+						</div>
+
 						<div class="social">
 							<ul>
 								<li><a href="https://twitter.com/dugout/" title=""><i class="fab fa-twitter"></i></a></li>
