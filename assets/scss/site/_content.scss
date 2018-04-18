@@ -105,6 +105,7 @@ html, body {
 
 				h2 {
 					font-size: 30px;
+					margin-bottom: 0;
 					color: black;
 
 					a {
@@ -166,10 +167,18 @@ html, body {
 					padding: 0 0 0 20px;
 					box-sizing: border-box;
 
+					overflow: hidden;
+						text-overflow: ellipsis;
+						display: -webkit-box;
+						-webkit-box-orient: vertical;
+						-webkit-line-clamp: 3; /* number of lines to show */
+						line-height: 66px;        /* fallback */
+						max-height: 66px;       /* fallback */
+
 					h2 {
 						font-size: 18px;
 						color: black;
-						margin-bottom: 20px;
+						margin-bottom: 0;
 
 						a {
 							color: inherit;
@@ -276,7 +285,7 @@ html, body {
 		padding: 20px;
 
 		h1 {
-			font-size: 30px;
+			font-size: 34px;
 			color: black;
 
 			a {
@@ -310,12 +319,24 @@ html, body {
 		padding: 20px;
 		background-color: white;
 
+		h2 {
+			color: black;
+			font-size: 24px;
+		}
+
 		figure {
 			margin: 1em 0;
 
 			figcaption {
 				background: $primary-color;
 				padding: 8px;
+			}
+		}
+
+		p {
+
+			&:last-of-type {
+				margin: 0 0 10px 0;
 			}
 		}
 

@@ -28,6 +28,8 @@
 		endif;
 		?>
 
+		<?php 
+		/*
 		<div class="entry-meta">
 			<div class="time">	
 				<!-- <i class="far fa-clock"></i> -->
@@ -52,6 +54,8 @@
 			</div>
 			<div class="sharethis-inline-share-buttons"></div>
 		</div><!-- .entry-meta -->
+		*/ 
+		?>
 	</header>
 
 	<div class="entry-content">

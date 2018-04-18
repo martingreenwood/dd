@@ -755,7 +755,7 @@ html, body { min-height: 100%; }
 
 .home #content .post .entry-header { padding: 20px; }
 
-.home #content .post .entry-header h2 { font-size: 30px; color: black; }
+.home #content .post .entry-header h2 { font-size: 30px; margin-bottom: 0; color: black; }
 
 .home #content .post .entry-header h2 a { color: inherit; }
 
@@ -777,9 +777,9 @@ html, body { min-height: 100%; }
 
 .home #content .post:not(:first-of-type) .entry-meta .cat { background-color: #fae232; }
 
-.home #content .post:not(:first-of-type) .entry-header { float: left; width: 60%; padding: 0 0 0 20px; box-sizing: border-box; }
+.home #content .post:not(:first-of-type) .entry-header { float: left; width: 60%; padding: 0 0 0 20px; box-sizing: border-box; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; /* number of lines to show */ line-height: 66px; /* fallback */ max-height: 66px; /* fallback */ }
 
-.home #content .post:not(:first-of-type) .entry-header h2 { font-size: 18px; color: black; margin-bottom: 20px; }
+.home #content .post:not(:first-of-type) .entry-header h2 { font-size: 18px; color: black; margin-bottom: 0; }
 
 .home #content .post:not(:first-of-type) .entry-header h2 a { color: inherit; }
 
@@ -817,7 +817,7 @@ html, body { min-height: 100%; }
 
 .single .entry-header { padding: 20px; }
 
-.single .entry-header h1 { font-size: 30px; color: black; }
+.single .entry-header h1 { font-size: 34px; color: black; }
 
 .single .entry-header h1 a { color: inherit; }
 
@@ -831,9 +831,13 @@ html, body { min-height: 100%; }
 
 .single .entry-content { padding: 20px; background-color: white; }
 
+.single .entry-content h2 { color: black; font-size: 24px; }
+
 .single .entry-content figure { margin: 1em 0; }
 
 .single .entry-content figure figcaption { background: #fae232; padding: 8px; }
+
+.single .entry-content p:last-of-type { margin: 0 0 10px 0; }
 
 .single .entry-content .videoWrapper { margin-bottom: 20px; }
 

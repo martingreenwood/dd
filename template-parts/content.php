@@ -22,6 +22,8 @@
 		endif;
 		if ( 'post' === get_post_type() ) :
 			?>
+			<?php 
+			/*
 			<div class="entry-meta">
 				<div class="time">	
 					<!-- <i class="far fa-clock"></i> -->
@@ -45,6 +47,8 @@
 					?>
 				</div>
 			</div><!-- .entry-meta -->
+			*/
+			?>
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 

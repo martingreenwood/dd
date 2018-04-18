@@ -7,8 +7,15 @@
 		"uuidString": "5D91B198-5421-47A9-B7CB-A2A2AE977F58"
 		}
 	],
-"creatorBuild": "26330",
+"creatorBuild": "26680",
 "files": {
+	"\/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/.gitattributes",
+		"oF": 0
+		},
 	"\/404.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1287,7 +1294,8 @@
 	"creationDate": 537198434,
 	"displayValue": "dugoutdaily",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-yesBaby"
+	"iconImageName": "meme-yesBaby",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -3090,6 +3098,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
